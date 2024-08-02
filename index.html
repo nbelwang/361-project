@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birds of the Pacific Northwest Identification Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="home">
+    <div class="home-container">
+        <h1>Birds of the Pacific Northwest <br> Identification Quiz</h1>
+        <p>Test your skills, or search for a bird to see a picture of it!</p>
+
+        <button onclick="location.href='quiz.html'">start quiz</button>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="search bird name">
+            <button onclick="searchBird()">Search</button>
+        </div>
+        <div id="birdImageContainer"></div>
+    </div>
+  </div>
+<footer>
+<p>&copy; 2024 Annabel Wang</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

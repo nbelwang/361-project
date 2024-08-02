@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birds of the PNW Identification Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<button id="back-btn" onclick="confirmExit()"> < back</button>
+
+<div class="app">
+  <h1>Birds of the PNW Identification Quiz</h1>
+  <h2 id="question">What is this bird?</h2>
+  <div class="quiz">
+      <div class ="image-container">
+        <img id="bird-image" src="" alt="Bird Image">
+      </div>
+      <div id="answer-buttons">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+  </div>
+  <button id="next-btn">Next</button>
+</div>
+<footer>
+  <p>&copy; 2024 Annabel Wang</p>
+</footer>
+<script src="script.js"></script>
+<script>
+  function confirmExit(){
+    if (confirm("Are you sure you want to exit this quiz? Your progress won't be saved.")) {
+      window.location.href = 'index.html';
+    }
+  }
+</script>
+</body>
+</html>

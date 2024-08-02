@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: url('pnw.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-bottom: 100px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.home-container {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 50px;
+  text-align: center;
+  max-width: 1000px;
+  width: 80%;
+  margin-top: -50px;
+}
+
+.home-container h1 {
+  font-size: 50px;
+  margin-bottom: 0.5em;
+  color: #001e4d;
+}
+
+.home-container p {
+  font-size: 20px;
+  margin-bottom: 1.5em;
+  color: #001e4d;
+}
+
+.home-container button {
+  font-size: 20px;
+  padding: 15px;
+  width: 150px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-container button:hover {
+  background-color: #45a049;
+}
+
+.search-bar {
+  margin-top: 2em;
+}
+
+.search-bar input {
+  width: 40%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: 1px solid #001e4d;
+}
+
+.search-bar button {
+  background: #012764;
+  color: #fff;
+  font-weight: 100px;
+  font-size: 15px;
+  width: 100px;
+  border: 0;
+  padding: 11px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #001a3d; /* Darker shade for hover effect */
+}
+
+#birdImageContainer {
+  margin-top: 20px;
+  text-align: center; 
+}
+
+#birdImageContainer img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px; 
+  border-radius: 10px; 
+}
+
+.app{
+  background: #fff;
+  width: 90%;
+  max-width: 900px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+.app h1{
+  font-size: 25px;
+  color: #001e4d;
+  font-weight: 600;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+.quiz{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.app h2{
+  font-size: 18px;
+  color: #001e4d;
+  font-weight: 600;
+  font-size: 21px;
+  text-align: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.image-container {
+  width: 800px;
+  height: 357px;
+  overflow: hidden;
+  position: relative;
+}
+
+#bird-image {
+  width: 100%;
+  height: 100%;
+  max-width: 510px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#answer-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 20px;
+}
+
+.btn{
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  width: 80%;
+  border: 1px solid #222;
+  padding: 20px;
+  margin: 18px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: #222;
+  color: #fff;
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+#back-btn {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin-left: 310px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 660px;
+}
+
+#next-btn{
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 10px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+.correct{
+  background: #9aeabc;
+}
+.incorrect{
+  background: #ff9393;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-align: left; /* Center the footer text */
+  color: #ffffff; /* Change the color */
+}
